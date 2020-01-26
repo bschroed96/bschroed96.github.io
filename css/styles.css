@@ -1,0 +1,260 @@
+/* ------------------------------------------Main div------------------------------------------ */
+.main {
+  overflow: hidden;
+  height: 100vh;
+}
+
+/* ------------------------------------------Nav bar------------------------------------------ */
+
+#about {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-family: 'Orbitron', sans-serif;
+  z-index: 5;
+}
+
+#blog {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-family: 'Orbitron', sans-serif;
+  z-index: 5;
+}
+
+#work {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-family: 'Orbitron', sans-serif;
+  z-index: 5;
+}
+
+#home {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-family: 'Orbitron', sans-serif;
+  z-index: 5;
+}
+
+.circle {
+  width: 75px;
+  height: 75px;
+  background-color: pink;
+  animation: blob 3.5s linear infinite;
+  position: absolute;
+  top: -100%;
+  left: -25%;
+  z-index: -1;
+  overflow: visible;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.circle2 {
+  width: 75px;
+  height: 75px;
+  background-color: pink;
+  animation: blogblob 3.5s linear infinite;
+  position: absolute;
+  top: -100%;
+  left: -25%;
+  z-index: -1;
+  overflow: visible;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.circle3 {
+  width: 75px;
+  height: 75px;
+  background-color: pink;
+  animation: blogblob 3.5s linear infinite;
+  position: absolute;
+  top: -100%;
+  left: -25%;
+  z-index: -1;
+  overflow: visible;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.circle4 {
+  width: 75px;
+  height: 75px;
+  background-color: pink;
+  animation: blogblob 3.5s linear infinite;
+  position: absolute;
+  top: -100%;
+  left: -25%;
+  z-index: -1;
+  overflow: visible;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.navbar {
+  background-color: lightblue;
+  position: relative;
+  left: -10%;
+  top: -50px;
+  width: 450px;
+  height: 400px;
+  animation: navblob 6s linear infinite;
+  overflow: hidden;
+}
+
+
+
+a {
+  text-decoration: none; /*gets rid of blue underline*/
+  color: inherit; /*removes default blue color*/
+}
+
+@keyframes navblob 
+{
+  0% 
+  {
+    border-radius: 0% 181% 108% 194% ;
+  }
+  25%
+  {
+    border-radius: 0% 71% 108% 174% ;
+  }
+  50%
+  {
+    border-radius: 0% 111% 208% 97% ;
+  }
+  75%
+  {
+    border-radius: 0% 161% 531% 189%;
+  }
+  100%
+  {
+    border-radius: 0% 181% 108% 194% ;
+  }
+}
+
+@keyframes blob 
+{
+  0% 
+  {
+    border-radius: 266% 181% 158% 194% ;
+  }
+  25%
+  {
+    border-radius: 176% 71% 158% 174% ;
+  }
+  50%
+  {
+    border-radius: 106% 111% 208% 97% ;
+  }
+  75%
+  {
+    border-radius: 126% 161% 531% 189%;
+  }
+  100%
+  {
+    border-radius: 266% 181% 158% 194% ;
+  }
+}
+
+@keyframes blogblob 
+{
+  0% 
+  {
+    border-radius: 196% 181% 158% 194% ;
+  }
+  25%
+  {
+    border-radius: 176% 171% 148% 274% ;
+  }
+  50%
+  {
+    border-radius: 196% 311% 208% 217% ;
+  }
+  75%
+  {
+    border-radius: 126% 161% 131% 259%;
+  }
+  100%
+  {
+    border-radius: 196% 181% 158% 194% ;
+  }
+}
+
+/* ------------------------------------------Body circle------------------------------------------ */
+
+.bodycircle {
+  width: 60%;
+  height: 110%;
+  left: 46%;
+  top: -33%;
+  background-color: lightblue;
+  border-radius: 100% 100% 0% 100%;
+  position: relative;
+}
+
+.spin {
+  animation: spin 2s ease-in-out forwards;
+}
+
+.hello {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  font-size: 25vh;
+  position: absolute;
+  left: -15vw;
+}
+
+@keyframes spin 
+
+{
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(90deg);}
+}
+
+.info {
+  position: relative;
+  width: 30vw;
+  height: 10vh;
+  line-height: 1.5em;
+  font-family: 'Neuton', serif;
+  font-size: 24px;
+  font-weight: 300;
+  top: 60%;
+  left: 20%;
+  transform: rotate(-90deg);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
