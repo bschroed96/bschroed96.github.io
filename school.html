@@ -29,21 +29,31 @@
 		</div>
 	</div>
 <div class="blogholder">
-	<div class="blog1 title"><h2>Insertion Sort Analysis</h2>
-		<footer id="date">1/27/20</footer>
+		<div class="blog1 title"><h2>Midterms Looming and Functional Programming</h2>
+		<footer id="date">2/19/20</footer>
 		<p class="fblog">
-			In lecture there was some confusion about the runtime analysis of insertion sort. [add insertion sort]
-			The difficulty was with summation notation. the summation of j=2 to n for (j - 1) reduces to a closed form
-			equation of n(n-1)/2. The difficulty was due to simplification. 
+			Last week was the first midterm for machine architecture, and it went pretty smoothly. Lots of resources to prep with and straight forward in nature. Project went smoothly as well, probably around 17 hours or so to finish up editing and commenting/cleaning code. Not too bad, definitely hit some dumb mistakes which cost me a lot of time. I.E. fread("file"...) took a while to find... Additionally, shenanigans with pointers ensued while mallocing. Take away: Remember, a pointer itself is still passed by value to a function (unless its a pointer to a pointer). Therefore, changes to the pointer itself in a function call will result in nothing after function is exited. IE a null pointer passed in and malloc'd to a struct will still be null upon exit of func. Obvious, but caused some confusion. <br> <br>
+			Internship with Multitech was accepted last week as well, so Summer plans are now concrete. Additionally, over the weekend booked tickets to Korea for the 13th - 31st. Our flight connects through China, and with current Coronavirus, there is some concern. Flights have been cancelled to China until April 30th. However, I am not too worried, and worrying about it won't do any good. Looking forward to finishing up my exams and hopping on a plane that night! <br> <br>
+			Ocaml is turning out to be quite different than I thought. I continue to like the idea of functional programming, though it definitely takes some thinking. The fact that a binary tree function with insert, delete, find, and tolist functions took less than 100 lines of code is really nice. However, there is a lot of cognitive load. The amount of recursion and nested recursion can really take some time to wrap your head around. However, the lack of memeory management makes for clean functions without worrying about cleaning up etc. From that standpoint, it is very straightforward. I think conceptually I enjoy functional programming. Using a language to implement it can be the hard part. <br> <br>
+			Next week is going to be busy. I have midterms for functional, algorithms, and stats. It is a bit overwhelming, though I think stats will be manageable (just need to put in the work). I am a bit concerned with functional, as it is a lot of type checking and I often make mistakes. Also, it seems like quick implementation of functions, which may or may not go well. Depends on the functions and my brain that day. Algorithms is also a bit uncertain. The homework was definitely something to wrestle with, and I am not entirely sure about my answers. Proving mergesort's division algorithm seems like such a simple task, however the proper way to prove the invariant proved tedious. A proof by induction was the route I went, but I am still not sure. Additionally finding the T(n) of the merge part seemed straightforward enough, except for the pesky conditional statement. Using floor and ceiling functions seemed correct, but ended up combining all floor/ceiling executions into one execution. Hoping for the best. <br> <br>
+			This week is acutally pretty slow. Just finished functional assignment for Friday and have the rest of the week to study for next week. Project 2 for machine arch comes out tomorrow, it will be hard not to grind away at that this weekend and prioritize studying. 
 		</p>
 	</div>
-	<div class="blog1 title"><h2>Project 1, Functional HW1, and Interviews</h2>
+		<div class="blog1 title"><h2>Project 1, Functional HW1, and Interviews</h2>
 		<footer id="date">2/04/20</footer>
 		<p class="fblog">
 			Last Friday got the first C project. Not too bad, spent about 6 hours on Sunday working on it. Some wierd makefile bugs, but got them fixed. Nearly there on part 1 and 2, have a bug in binary file reading and weird bug coming up about 10 elements short when reading elements in. Will look into it. Graphing is nearly there, need to update graph output loop. <br>
 			<br>
 			For the first functional assignment, we are just learning OCAML. The functional approach to programming seems quite intuitive right now; however, as functions grow in size and complexity I am not sure how well I will like it. Somewhat concerned about the emphasis on commenting/style, however I am planning to go over this on Thursday. <br> <br>
 			Interview last Thursday with UHG and an interview this morning with Wipfli. Interview tomorrow with Multitech (onsight). Hoping to get an internship locked down soon, so I can start planning my summer travels accordingly. 
+		</p>
+	</div>
+	<div class="blog1 title"><h2>Insertion Sort Analysis</h2>
+		<footer id="date">1/27/20</footer>
+		<p class="fblog">
+			In lecture there was some confusion about the runtime analysis of insertion sort. [add insertion sort]
+			The difficulty was with summation notation. the summation of j=2 to n for (j - 1) reduces to a closed form
+			equation of n(n-1)/2. The difficulty was due to simplification. 
 		</p>
 	</div>
 	<!--insert next blog above me -->

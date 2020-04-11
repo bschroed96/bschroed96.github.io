@@ -1,5 +1,21 @@
-// ========================================== P5.js Boids ===============================================
+// Processing js 5
 
+// function setup() { 
+//   createCanvas(screen.width, 400);
+// } 
+
+// function draw() { 
+//   if (mouseIsPressed) {
+//     fill(0);
+//   } else {
+//     fill(255);
+//   }
+//   ellipse(mouseX, mouseY, 80, 80);
+// }
+
+
+
+// =================================== boids =======================================
 
 let boids = [];
 
@@ -181,121 +197,3 @@ class Boid {
 }
 
 
-// var date = new Date();
-// document.getElementById("date").innerHTML = date.getDate() + "/" + date.getMonth()+1 + "/" + date.getFullYear();
-
-
-// navbar stuff
-
-const a = Math.floor((Math.random() * 200) + 1);
-const b = Math.floor((Math.random() * 200) + 1);
-const c = Math.floor((Math.random() * 200) + 1);
-const d = Math.floor((Math.random() * 200) + 1);
-const e = Math.floor((Math.random() * 200) + 1);
-const f = Math.floor((Math.random() * 200) + 1);
-const g = Math.floor((Math.random() * 200) + 1);
-const h = Math.floor((Math.random() * 200) + 1);
-
-console.log(a)
-console.log(b)
-
-// randomly place navbar elements
-var about = document.getElementById('about');
-about.style.position = "absolute";
-about.style.left = 200 + a + 'px';
-about.style.top = 100 + b + 'px';
-
-var blog = document.getElementById('blog');
-blog.style.left = 210 + c + 'px';
-blog.style.top = 90 + d + 'px';
-
-var work = document.getElementById('work');
-work.style.left = 195 + e + 'px';
-work.style.top = 105 + f + 'px';
-
-var home = document.getElementById('home');
-home.style.left = 215 + g + 'px';
-home.style.top = 80 + h + 'px';
-
-
-
-// Create draggable about div
-$(function() {
-	$("#about").draggable();
-});
-
-$(function() {
-	$("#blog").draggable();
-});
-
-$(function() {
-	$("#work").draggable();
-});
-
-$(function() {
-	$("#home").draggable();
-});
-
-// Get user input 
-
-function UserInput() {
-	console.log("nums: " + document.getElementById("nums").value);
-	return document.getElementById("nums").value;
-}
-
-
-// Algorithm Merge sort
-var array = [4, 3, 1, 5, 2];
-
-function MergeSort(list) {
-  if (list.length < 2) {
-  	return list;
-  }
-  else {
-  	var L = [];
-  	var R = [];
-  	while (list.length > 1) {
-  		L.unshift(list[0]);
-  		list.shift();
-  		R.unshift(list[0]);
-  		list.shift();
-  	}
-  		if (list.length > 0) {
-  			L.unshift(list[0]);
- 		 }
- 		 L = MergeSort(L);
- 		 R = MergeSort(R);
- 		 S = [];
- 		 while (L.length != 0 && R.length != 0) {
- 		 	if (L[0] <= R[0]) {
- 		 		S.push(L[0]);
- 		 		L.shift();
- 		 	}
- 		 	else {
- 		 		S.push(R[0]);
- 		 		R.shift();
- 		 	}
- 		 }
- 		 S = S.concat(L, R);
- 		 return S;
-  }
-}
-
-var sorted = MergeSort(array);
-console.log(sorted);
-
-
- function myJsFunction(){
-    var text=document.getElementById('input1');
-    return text;
- }
-
-
-var inputElement = document.getElementById('bleh');
-  var theirInput = '';
-  inputElement.addEventListener('change', function(e) {
-    theirInput = e.target.value; 
-    console.log(theirInput);
-  }); 
-console.log(theirInput);
-console.log(5*theirInput);

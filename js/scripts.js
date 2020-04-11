@@ -10,6 +10,30 @@ const h = Math.floor((Math.random() * 200) + 1);
 console.log(a)
 console.log(b)
 
+// vv =================== p5 ========================= vv
+
+
+
+function setup() {
+  var canvas = createCanvas(windowWidth, windowHeight);
+ 
+  // Move the canvas so it’s inside our <div id="sketch-holder">.
+  canvas.parent('sketch-holder');
+
+  background(255, 0, 200);
+}
+
+function draw() {
+  if (mouseIsPressed) {
+    fill(54, 47, 75);
+  } else {
+    fill(252, 186, 3);
+  }
+  ellipse(mouseX, mouseY, 80, 80);
+}
+
+// ^^ =================== p5 ========================= ^^
+
 // randomly place navbar elements
 var about = document.getElementById('about');
 about.style.position = "absolute";
@@ -46,7 +70,6 @@ $(function() {
 $(function() {
 	$("#home").draggable();
 });
-
 
 // Create Lazy susan type content carousel
 
