@@ -126,6 +126,7 @@
   height: 400px;
   animation: navblob 6s linear infinite;
   overflow: hidden;
+  z-index: 2;
 }
 
 
